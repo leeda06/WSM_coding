@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>샤워 코롱</title>
+  <link rel="stylesheet" href="CSS/header.css" />
+  <link rel="stylesheet" href="CSS/main.css" />
+  <link rel="stylesheet" href="CSS/footer.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@200;400;700&family=Noto+Sans+KR:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      position: relative;
+      font-family: 'Hahmlet', serif;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .rectangle {
+      position: relative;
+      display: flex;
+    }
+  </style>
+
+  <script>
+    // 첫번째 줄 버튼 기능
+    function showButtons(buttonNumber) {
+      var firstRow = document.getElementById("first-row");
+      var secondRow = document.getElementById("second-row");
+      var thirdRow = document.getElementById("third-row");
+
+      if (buttonNumber === 1) {
+        firstRow.classList.remove("hidden");
+        secondRow.classList.add("hidden");
+        thirdRow.classList.add("hidden");
+      } else if (buttonNumber === 2) {
+        firstRow.classList.add("hidden");
+        secondRow.classList.remove("hidden");
+        thirdRow.classList.add("hidden");
+      } else if (buttonNumber === 3) {
+        firstRow.classList.add("hidden");
+        secondRow.classList.add("hidden");
+        thirdRow.classList.remove("hidden");
+      }
+    }
+  </script>
+
+</head>
+
+<body bgcolor="#F8E0E6">
+  <header>
+    <div class="nav-list">
+      <button onclick= "location.href='../Pick.html'" style="color: white">향Pick</button>
+      <button onclick= "location.href='../perfume/perfume2.html'" style="color: white">향수#</button>
+      <button onclick="location.href='..\HowThat\perfume.html'" style="color: white">HowThat</button>
+    </div>
+  </header>
+  <div  style="justify-content:space-between;">
+    <div class="button-container">
+      <button class="button" onclick="showButtons(1)">향수 종류</button>
+      <button class="button" onclick="showButtons(2)">향기의 계열</button>
+      <button class="button" onclick="showButtons(3)">향수 사용법</button>
+    </div>
+
+    <div id="first-row">
+      <div class="firstB">
+        <button class="button" onclick="location.href='perfume.html'">퍼퓸</button>
+        <button class="button" onclick="location.href='button1.html'">오드 퍼퓸</button>
+        <button class="button" onclick="location.href='button2.html'">오드 뚜왈렛</button>
+        <button class="button" onclick="location.href='button3.html'">오드 코롱</button>
+        <button class="button">샤워 코롱</button>
+      </div>
+    </div>
+
+    <div id="second-row" class="hidden">
+      <div class="firstB">
+        <button class="button" onclick="location.href='button5.html'">플로럴 향</button>
+        <button class="button" onclick="location.href='button6.html'">머스크 향</button>
+        <button class="button" onclick="location.href='button7.html'">우디향</button>
+      </div>
+    </div>
+
+    <div id="third-row" class="hidden">
+      <div class="firstB">
+        <button class="button" onclick="location.href='button8.html'">뿌리는 위치</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="rectangle">
+        <div class="text">
+          <h2>샤워 코롱</h2>
+          <h5>일반적으로 향수에 비해 향 지속력은 약하지만 청량감을 주고 끈적임이 없어 가볍게 사용할 수 있는 제품입니다<br><br>
+             향수 중 가장 낮은 함량(3~5%)의 향원액을 함유하며 지속시간이 1시간 이내로 짧아 통상 샤워 후에 사용됩니다<br><br>
+            국내에서는 바디미스트와 샤워코롱이란 용어가 함께 사용됩니다
+          </h5><br><br>
+          <ul>
+            <li>향기 농도 낮음</li>
+            <li>샤워 시 사용</li>
+            <li>상쾌한 향기 제공</li>
+            <li>가격: 보통</li>
+          </ul>
+        </div>
+        <div class="images">
+          <img src="image\perfume1.jpg">
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <p>향Pick 서울특별시 관악구 호암로 546 전화번호 : 02 - 1234 - 1234 팩스 : 02 - 123 - 123 이메일 w2231@e-mirim.hs.kr</p>
+    </footer>
+  </div>
+</body>
+
+</html>

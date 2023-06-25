@@ -1,0 +1,104 @@
+:root {
+
+    /* color */
+    --fist-color: #000000;
+    --body-color: #fff;
+
+    --font-bold: 700;
+}
+
+* {
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: var(--fist-color);
+    position: fixed;
+    /* 스크롤 해도 항상 위치 고정함 */
+    top: 0;
+    right: 0;
+    /* 오른쪽 끝까지 */
+    left: 0;
+    /* 왼쪽 끝까지 */
+    z-index: 1;
+    width: 100vw;
+}
+
+nav {
+    height: 44px;
+}
+
+.nav.container {
+    display: flex;
+    /* 기본값 : 수평정렬 */
+    justify-content: space-between;
+    align-items: center;
+    /* 교차축 가운데 맞춤 */
+    padding: 0 16px;
+    /* 위아래: 0 왼오른: 16*/
+    color: #fff;
+}
+
+.nav.container a {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    /* 수평 배치 */
+    column-gap: 100px;
+    /* 간격 */
+    font-weight: var(--font-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+li>a {
+    text-decoration: none;
+}
+
+main {
+    /* header의 높이만큼 여백 추가 */
+    overflow-y: auto;
+    /* 스크롤 바 자동 표시 */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* 세로 방향으로 정렬될 수 있도록 변경 */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    font-size: 35px;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    z-index: 1;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,29 @@
+footer {
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  position: flex;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 940px) {
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    position: flex;
+    bottom: 0;
+  }
+  
+}

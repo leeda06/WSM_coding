@@ -1,0 +1,261 @@
+* {
+    user-select: none;
+}
+
+main {
+    background-image: url("../img/Pickimage.png");
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.group {
+    margin: 50px;
+    max-width: 80%;
+
+    background-color: white;
+    border: 3px solid #000000;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.num {
+    padding: 0px 0;
+}
+
+/* 결과화면 */
+sub-text {
+    font-size: 20px;
+}
+
+shape-text {
+    font-size: 35px;
+}
+
+type-name {
+    font-size: 24px;
+}
+
+.part {
+    margin: 0 10px;
+    margin-bottom: 30px;
+}
+
+.perfume>name {
+    font-size: 25px;
+}
+
+.perfume>explan {
+    font-size: 20px;
+    word-wrap: normal;
+}
+
+#like>.perfume-div {
+    display: block;
+}
+
+.top-title {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.detail {
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.triangle-button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    height: 150px;
+}
+
+.triangle-button img {
+    width: 100%;
+    /* Adjust the size of the icon as needed */
+    height: 100%;
+}
+
+.triangle-button>.right {
+    transform: rotate(-90deg);
+}
+
+.triangle-button>.left {
+    transform: rotate(90deg);
+}
+
+.triangle-button>.mobile {
+    display: none;
+}
+
+.perfume-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(80%/3);
+    margin: 0 10px;
+    border: 3px solid #000000;
+    border-radius: 20px;
+}
+
+.perfume-img>img {
+    width: 100%;
+}
+
+#scene4>.section>div>.group {
+    width: 75vw;
+}
+
+.result {
+    overflow: hidden;
+}
+
+.num {
+    width: 100%;
+    height: auto;
+}
+
+.num>.section {
+    height: 100%;
+    margin: 30px 0;
+}
+
+
+#bad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 720px) {
+
+    .num {
+        padding: 0;
+    }
+
+    .group {
+        max-width: 90%;
+    }
+
+    .perfume-div {
+        width: 300%;
+        display: flex;
+    }
+
+    #like>.perfume-div {
+        display: none;
+    }
+
+    .like {
+        display: flex;
+    }
+
+    #like>#one {
+        display: block;
+    }
+
+    .bad {
+        display: flex;
+    }
+
+    .group>#bad-part {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .group>#like-part {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .perfume>name {
+        font-size: 4vw;
+        font: bolder;
+    }
+
+    .perfume>explan {
+        font-size: 3vw;
+        word-wrap: normal;
+    }
+
+    .triangle-button {
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 150px;
+        height: 50px;
+
+    }
+
+    .triangle-button img {
+        width: 100%;
+        /* Adjust the size of the icon as needed */
+        height: 100%;
+    }
+
+    .triangle-button>.right {
+        padding-bottom: 3px;
+    }
+
+    .triangle-button>.left {
+        padding-bottom: 3px;
+    }
+
+
+    #bad>.perfume-div {
+        width: 80%;
+        display: none;
+    }
+
+    #bad>#perfume_bad {
+        display: block;
+        width: 300%;
+    }
+}
+
+
+@media (max-width: 540px) {
+
+    #like>.perfume-div {
+        width: 300%;
+        display: none;
+    }
+
+    #like>#one {
+        display: block;
+    }
+
+
+    .triangle-button>.right {
+        display: none;
+    }
+
+    .triangle-button>.left {
+        display: none;
+    }
+
+    .triangle-button>.mobile {
+        display: flex;
+    }
+
+    .group>#bad-part {
+        display: none;
+    }
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Color on Button Click</title>
+  <style>
+    .div1 {
+      margin-bottom: 20px;
+    }
+    .div2 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="div1">
+    <button onclick="changeColor(this)">Change Color</button>
+    <div class="div2"></div>
+  </div>
+
+  <div class="div5">
+    <button onclick="changeColor(this)">Change Color</button>
+    <div class="div2"></div>
+  </div>
+ 
+  <script>
+    function changeColor(button) {
+      var div2 = button.parentElement.querySelector('.div2');
+      div2.style.display = 'none'; 
+    }
+
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+  </script>
+</body>
+</html>

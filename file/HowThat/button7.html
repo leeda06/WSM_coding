@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>우디향</title>
+  <link rel="stylesheet" href="CSS/header.css" />
+  <link rel="stylesheet" href="CSS/main.css" />
+  <link rel="stylesheet" href="CSS/footer.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@200;400;700&family=Noto+Sans+KR:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      position: relative;
+      font-family: 'Hahmlet', serif;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .rectangle {
+      position: relative;
+      display: flex;
+    }
+  </style>
+
+  <script>
+    // 첫번째 줄 버튼 기능
+    function showButtons(buttonNumber) {
+      var firstRow = document.getElementById("first-row");
+      var secondRow = document.getElementById("second-row");
+      var thirdRow = document.getElementById("third-row");
+
+      if (buttonNumber === 1) {
+        firstRow.classList.remove("hidden");
+        secondRow.classList.add("hidden");
+        thirdRow.classList.add("hidden");
+      } else if (buttonNumber === 2) {
+        firstRow.classList.add("hidden");
+        secondRow.classList.remove("hidden");
+        thirdRow.classList.add("hidden");
+      } else if (buttonNumber === 3) {
+        firstRow.classList.add("hidden");
+        secondRow.classList.add("hidden");
+        thirdRow.classList.remove("hidden");
+      }
+    }
+  </script>
+
+</head>
+
+<body bgcolor="#F8E0E6">
+  <header>
+    <div class="nav-list">
+      <button onclick= "location.href='../Pick.html'" style="color: white">향Pick</button>
+      <button onclick= "location.href='../perfume/perfume2.html'" style="color: white">향수#</button>
+      <button onclick="location.href='..\HowThat\perfume.html'" style="color: white">HowThat</button>
+    </div>
+  </header>
+  <div  style="justify-content:space-between;"> 
+    <div class="button-container">
+      <button class="button" onclick="showButtons(1)">향수 종류</button>
+      <button class="button" onclick="showButtons(2)">향기의 계열</button>
+      <button class="button" onclick="showButtons(3)">향수 사용법</button>
+    </div>
+
+    <div id="first-row" class="hidden">
+      <div class="firstB">
+        <button class="button" onclick="location.href='perfume.html'">퍼퓸</button>
+        <button class="button" onclick="location.href='button1.html'">오드 퍼퓸</button>
+        <button class="button" onclick="location.href='button2.html'">오드 뚜왈렛</button>
+        <button class="button" onclick="location.href='button3.html'">오드 코롱</button>
+        <button class="button" onclick="location.href='button4.html'">샤워 코롱</button>
+      </div>
+    </div>
+
+    <div id="second-row">
+      <div class="firstB">
+        <button class="button" onclick="location.href='button5.html'">플로럴 향</button>
+        <button class="button" onclick="location.href='button6.html'">머스크 향</button>
+        <button class="button">우디향</button>
+      </div>
+    </div>
+
+    <div id="third-row" class="hidden">
+      <div class="firstB">
+        <button class="button" onclick="location.href='button8.html'">뿌리는 위치</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="rectangle">
+        <div class="text">
+          <h2>우디향</h2>
+          <h5>우디향은 나무와 향기를 연상시키는 성분으로 구성된 향기입니다.<br><br>
+            중후한 향기를 말합니다. 나무의 이미지처럼 부드럽고 따뜻한 향입니다. 우디 계열은 대체로 중후한 향으로 잔향이 무겁게 남아 지속력이 좋은 편입니다.<br><br>
+            대개 나무, 허브, 밀림 등의 향이 혼합되어 우디향을 구성합니다. 따뜻하고 자연적인 느낌을 주며, 중성적인 성향을 가지고 있습니다.</h5><br><br>
+            <ul>
+              <li>나무와 향기 연상</li>
+              <li>따뜻하고 자연적인 느낌</li>
+              <li>중성적인 향</li>
+              <li>가격: 다양</li>
+            </ul>
+        </div>
+        <div class="images">
+          <img src="image\perfume1.jpg">
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <p>향Pick 서울특별시 관악구 호암로 546 전화번호 : 02 - 1234 - 1234 팩스 : 02 - 123 - 123 이메일 w2231@e-mirim.hs.kr</p>
+    </footer>
+  </div>
+</body>
+
+</html>

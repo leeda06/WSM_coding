@@ -1,0 +1,154 @@
+/* 첫번째 줄 버튼 */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+}
+
+/* 두번째 줄 버튼 */
+.firstB {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  right: 1px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* 흰색 사각형 */
+.rectangle {
+  background-color: white;
+  width: 88%;
+  margin: 10px auto;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 10px;
+  overflow: auto;
+}
+
+.rectangle>.images {
+  margin-top: 3vw;
+  margin-bottom: 1cm;
+  float: right;
+}
+
+.rectangle>.text {
+  width: 50%;
+  float: left;
+  margin-top: 4vh;
+}
+
+.rectangle h2 {
+  font-size: 3.5vh;
+  font-weight: 500;
+}
+
+.rectangle h4 {
+  font-size: 3vh;
+  font-weight: 400;
+}
+
+.rectangle h5 {
+  font-size: 3vh;
+  font-weight: 400;
+}
+
+.button {
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 1.5vw;
+}
+
+/* 숨기기 */
+.hidden {
+  justify-content: center;
+  display: none;
+  color: black;
+  text-decoration: none;
+}
+
+.rectangle>.images img {
+  width: 80%;
+}
+
+.rectangle>.images {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rectangle {
+  justify-content: space-around;
+  width: 80%;
+}
+ul{
+  width: 100%;
+  padding: 3vh;
+}
+li{
+  font-size: 1.5em;
+}
+
+@media (max-width:720px) {
+
+  /* 사각형 안 글씨 */
+  .rectangle>.text {
+    width: 50%;
+    float: left;
+    margin-bottom: 2%;
+  }
+
+  .rectangle h2 {
+    font-size: VW;
+    font-weight: 500;
+  }
+
+  .rectangle h4 {
+    font-size: 4vw;
+    font-weight: 400;
+  }
+
+  .rectangle h5 {
+    font-size: 3vw;
+    font-weight: 400;
+  }
+
+  .rectangle {
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images {
+    margin: 0;
+    padding: 0;
+  }
+
+  .rectangle>.images img {
+    width: 80%;
+  }
+
+  .rectangle>.images {
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+}
